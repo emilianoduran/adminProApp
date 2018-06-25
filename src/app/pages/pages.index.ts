@@ -1,0 +1,10 @@
+export { LoginComponent } from './login/login.component';
+export { RegisterComponent } from './login/register.component';
+export { PagesComponent } from './pages.component';
+export { AccountSettingComponent } from './components/account-setting/account-setting.component';
+export { DashboardComponent } from './components/dashboard/dashboard.component';
+export { DataCompanyComponent } from './components/data-company/data-company.component';
+export { NotpagefoundComponent } from './components/shared/notpagefound/notpagefound.component';
+export { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+export { BredcrumbsComponent } from './components/shared/bredcrumbs/bredcrumbs.component';
+export { HeaderComponent } from './components/shared/header/header.component';

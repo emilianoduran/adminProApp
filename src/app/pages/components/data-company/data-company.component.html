@@ -1,0 +1,585 @@
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<!-- Row -->
+<div class="row">
+
+    <!-- columna izquierda -->
+    <div class="col-lg-4 col-xlg-3 col-md-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="m-t-30 text-center">
+                    <img src="assets/images/users/5.jpg" class="img-circle" width="150" />
+                    <h4 class="card-title m-t-10">{{_cd.INFO.name | uppercase}}</h4>
+                    <h6 class="card-subtitle">{{_cd.INFO.profession}}</h6>
+                    <div class="row justify-content-md-center">
+                        <div class="col-4">
+                            <!-- Contenido enlace -->
+                        </div>
+                        <div class="col-4 ">
+                            <!-- Contenido enlace -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+            <div class="card-body">
+                <small class="text-muted">Correo Electrónico </small>
+                <h6>{{_cd.INFO.userInfo.email}}</h6>
+                <small class="text-muted p-t-30 db">Teléfono Móvil</small>
+                <h6>+{{_cd.INFO.userInfo.mobile.countryCodeAndPrefixMobile}}-{{_cd.INFO.userInfo.mobile.areaCodeMobile}}-{{_cd.INFO.userInfo.mobile.numberMobile}}
+                </h6>
+                <small class="text-muted p-t-30 db">Ubicación</small>
+                <h6>{{_cd.INFO.userInfo.location.address}}-{{_cd.INFO.userInfo.location.city}} - {{_cd.INFO.userInfo.location.province}} - {{_cd.INFO.userInfo.location.country}} </h6>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.984642112623!2d-63.50943758425074!3d-33.030535083471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ce8149841cde2f%3A0x613577ef2deeb4c9!2sGral.+Manuel+Belgrano%2C+Ucacha%2C+C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1527721789957"
+                        width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <small class="text-muted p-t-30 db">Redes Sociales</small>
+                <br/>
+                <button class="btn btn-circle btn-secondary">
+                    <i class="fa fa-facebook"></i>
+                </button>
+                <button class="btn btn-circle btn-secondary">
+                    <i class="fa fa-twitter"></i>
+                </button>
+                <button class="btn btn-circle btn-secondary">
+                    <i class="fa fa-youtube"></i>
+                </button>
+                <h4 class="font-medium m-t-30">Habilidades Profesionales</h4>
+                <hr>
+                <h5 class="m-t-30">Fotografía
+                    <span class="pull-right">80%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; height:6px;">
+                        <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
+                <h5 class="m-t-30">Lightroom
+                    <span class="pull-right">90%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; height:6px;">
+                        <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
+                <h5 class="m-t-30">Photoshop
+                    <span class="pull-right">50%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%; height:6px;">
+                        <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
+                <h5 class="m-t-30">Smart Album
+                    <span class="pull-right">70%</span>
+                </h5>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; height:6px;">
+                        <span class="sr-only">50% Complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Column -->
+    <!-- Column -->
+
+
+
+
+
+
+
+
+
+    <div class="col-lg-8 col-xlg-9 col-md-7">
+        <div class="card">
+            <!-- Nav tabs -->
+
+            <ul class="nav nav-tabs profile-tab" role="tablist">
+
+                <li class="nav-item">
+                    <a class="nav-link  active" data-toggle="tab" href="#profile" role="tab">Perfil Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Ajustes de Perfil</a>
+                </li>
+
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+
+                <!--Perfil de Empresa-->
+                <div class="tab-pane  animated fadeIn" id="profile" role="tabpanel">
+                    <div class="card-body">
+
+                        <h4 class="font-medium m-t-30">Acerca de nosotros</h4>
+                        <hr>
+                        <div class="m-t-30">
+                            <p *ngFor="let item of _cd.INFO.about">{{item}}</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Ajustes de Perfil -->
+                <div class="tab-pane active animated fadeIn " id="settings" role="tabpanel">
+                    <div class="card-body">
+
+                        <h4 class="font-medium m-t-30">Ajustes de Perfil de empresa</h4>
+                        <hr>
+                        <!--  -->
+                        <form class="floating-labels m-t-30" [formGroup]="formDataCompany" (ngSubmit)="saveChanges()">
+
+
+
+
+                            <div class="row m-t-40">
+                                <div class="col-md-4">
+                                    <div class="form-group  " [ngClass]="{'has-error': !formDataCompany.get(['name']).valid && formDataCompany.get(['name']).touched}">
+
+                                        <input formControlName="name" spellcheck="true" type="text " class="form-control">
+                                        <label for=" name ">Nombre de Empresa</label>
+                                        <span class="bar "></span>
+
+
+                                        <!--  -->
+                                        <div *ngIf="formDataCompany.controls['name'].errors?.required && formDataCompany.get(['name']).touched">
+                                            <small class="form-control-feedback">El campo es obligatorio.</small>
+                                        </div>
+
+                                        <div *ngIf="formDataCompany.controls['name'].errors?.minlength && formDataCompany.controls['name'].touched">
+                                            <small class="form-control-feedback">Aún faltan {{formDataCompany.controls['name'].errors?.minlength.requiredLength
+                                                - formDataCompany.controls['name'].errors?.minlength.actualLength | number}}
+                                                caracteres</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group m-b-40" [ngClass]="{'has-error': !formDataCompany.get(['profession']).valid && formDataCompany.get(['profession']).touched}">
+                                        <!--  -->
+                                        <input formControlName="profession" [ngClass]="{'form-control': formDataCompany}" type="text" class="form-control " id="profession">
+                                        <!-- [ngClass]="{'invalid': !formDataCompany.controls['profession'].valid && formDataCompany.controls['profession'].touched}" -->
+                                        <span class="bar"></span>
+                                        <!-- [ngClass]="{'label-invalid': !formDataCompany.controls['profession'].valid && formDataCompany.controls['profession'].touched }" -->
+                                        <label for="profession">Profesión/Actividad</label>
+                                        <div *ngIf="formDataCompany.controls['profession'].errors?.required && formDataCompany.get(['profession']).touched">
+                                            <small class="form-control-feedback">El campo es obligatorio.</small>
+                                        </div>
+
+                                        <div *ngIf="formDataCompany.controls['profession'].errors?.minlength && formDataCompany.controls['profession'].touched">
+                                            <small class="form-control-feedback">Aún faltan {{formDataCompany.controls['profession'].errors?.minlength.requiredLength
+                                                - formDataCompany.controls['profession'].errors?.minlength.actualLength |
+                                                number}} caracteres</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-left ">
+                                    <span class="bar"></span>
+                                    <div class="col-md-6 ">
+                                        <input class="left" type="file" id="input-file-now-custom-2" />
+
+                                        <span class="help-block">
+                                            <small>Logotipo</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div formArrayName="about" class="form-group m-b-40" [ngClass]="{'has-error': !formDataCompany.get(['about']).valid && formDataCompany.controls['about'].touched}">
+
+
+                                            <textarea formControlName="0" rows=5 id="nosotros" spellcheck="true" class="form-control "></textarea>
+                                            <span class="bar"></span>
+                                            <label for="nosotros">Acerca de Nosotros.</label>
+                                            <span class="help-block" *ngIf="formDataCompany.controls['about'].value[0].length == 0">
+                                                <small [ngClass]="{'form-control-feedback': !formDataCompany.get(['about']).valid && formDataCompany.controls['about'].touched}">Breve descripcion acerca de tu empresa.</small>
+                                            </span>
+
+                                            <div *ngIf="formDataCompany.controls['about'].errors?.required && formDataCompany.get('about').touched">
+                                                <small class="form-control-feedback">El campo es obligatorio.</small>
+                                            </div>
+
+                                            <div *ngIf="formDataCompany.controls['about'].errors?.minlength && formDataCompany.controls['about'].touched">
+                                                <small class="form-control-feedback">Aún faltan {{formDataCompany.controls['about'].errors?.minlength.requiredLength
+                                                    - formDataCompany.controls['about'].errors?.minlength.actualLength |
+                                                    number}} caracteres</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div formGroupName="userInfo">
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <h4 class="font-medium m-t-30">Información de Acceso</h4>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row m-t-15">
+                                        <div class="col-md-4">
+                                            <div class="form-group" [ngClass]="{'has-error': !formDataCompany.controls['userInfo'].controls['email'].valid && formDataCompany.controls['userInfo'].controls['email'].touched} ">
+                                                <!-- formControlName="email"  -->
+                                                <input formControlName="email" type="email" class="form-control" id="email">
+                                                <!--  -->
+                                                <span class="bar"></span>
+                                                <label for="email">Correo Electrónico</label>
+                                                <span class="help-block">
+
+
+                                                    <div *ngIf="formDataCompany.controls['userInfo'].controls['email'].value.length === 0">
+                                                        <small>Correo electrónico de tu empresa.</small>
+                                                    </div>
+                                                    <div *ngIf="formDataCompany.controls['userInfo'].controls['email'].errors?.required && formDataCompany.controls['userInfo'].controls['email'].touched  ">
+                                                        <small class="form-control-feedback">El campo es obligatorio.</small>
+                                                    </div>
+                                                    <div *ngIf="formDataCompany.controls['userInfo'].controls['email'].errors?.pattern && formDataCompany.controls['userInfo'].controls['email'].touched  ">
+                                                        <small class="form-control-feedback">Ingrese un email válido.</small>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group m-b-40" [ngClass]="{'has-error': !formDataCompany.get('userInfo.password').valid && formDataCompany.get('userInfo.password').touched}">
+                                                <!-- formControlName="password1" -->
+                                                <input formControlName="password" type="password" class="form-control" id="password">
+                                                <!--  -->
+                                                <span class="bar"></span>
+                                                <label for="password">Contraseña</label>
+                                                <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['password'].value.length === 0 ">
+                                                    <small>Cambiar contraseña.</small>
+                                                </span>
+                                                <div>
+                                                    <span class="form-control-feedback" *ngIf="formDataCompany.controls['userInfo'].controls['password'].errors?.required &&  formDataCompany.get('userInfo.password').touched">
+                                                        <small> Este campo es obligatorio</small>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="form-control-feedback" *ngIf="formDataCompany.controls['userInfo'].controls['password'].errors?.minlength &&  formDataCompany.get('userInfo.password').touched">
+                                                        <small> Debe contener un mínimo de {{formDataCompany.controls['userInfo'].controls['password'].errors?.minlength.requiredLength
+                                                            - formDataCompany.controls['userInfo'].controls['password'].errors?.minlength.actualLength
+                                                            }} </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group m-b-40" [ngClass]="{'has-error': !formDataCompany.get('userInfo.password1').valid && formDataCompany.get('userInfo.password1').touched}">
+                                                <!-- formControlName="password2" -->
+                                                <input formControlName="password1" type="password" class="form-control">
+                                                <span class="bar"></span>
+                                                <label for="password1">Repetir Contraseña </label>
+                                                <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['password1'].value.length === 0">
+                                                    <small>Vuelve a ingresar la contraseña.</small>
+                                                </span>
+                                                <div *ngIf="formDataCompany.controls['userInfo'].controls['password1'].errors?.minlength && formDataCompany.get('userInfo.password1').touched">
+                                                    <span class="form-control-feedback">
+                                                        <small> Debe contener un mínimo de {{formDataCompany.controls['userInfo'].controls['password1'].errors?.minlength.requiredLength
+                                                            - formDataCompany.controls['userInfo'].controls['password1'].errors?.minlength.actualLength}}
+                                                            </small>
+                                                    </span>
+                                                </div>
+                                                <div *ngIf="formDataCompany.controls['userInfo'].controls['password1'].errors?.noigual && formDataCompany.get('userInfo.password1').touched">
+                                                    <span class="form-control-feedback">
+                                                        <small> Las contraseñas no son iguales </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div formGroupName="location">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <h4 class="font-medium m-t-30">Ubicación</h4>
+                                                <hr>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row m-t-15">
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="country" type="text" class="form-control">
+                                                    <span class="bar"></span>
+                                                    <label for="pais">Pais </label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['location'].controls['country'].value.length === 0">
+                                                        <small>Pais de tu empresa.</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="province" type="text" class="form-control" id="provincia">
+                                                    <span class="bar"></span>
+                                                    <label for="provincia">Provincia </label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['location'].controls['province'].value.length === 0">
+                                                        <small>Provincia de tu empresa.</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="city" type="text" class="form-control" id="localidad">
+                                                    <span class="bar"></span>
+                                                    <label for="localidad">Localidad </label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['location'].controls['city'].value.length === 0">
+                                                        <small>Localidad de tu empresa.</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="address" type="text" class="form-control" id="calle">
+                                                    <span class="bar"></span>
+                                                    <label for="calle">Calle </label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['location'].controls['address'].value.length === 0">
+                                                        <small>Calle de tu empresa.</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="floorDoor" type="text" class="form-control">
+                                                    <span class="bar"></span>
+                                                    <label for="numero">Piso/Puerta</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['location'].controls['floorDoor'].value.length === 0">
+                                                        <small>Piso y número de puerta de tu oficina.</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="cp" type="text" class="form-control" id="cp">
+                                                    <span class="bar"></span>
+                                                    <label for="cp">Código Postal</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['location'].controls['cp'].value.length === 0">
+                                                        <small>Código postal de tu empresa.</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Teléfono Móvil -->
+                                    <div formGroupName="mobile">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <h4 class="font-medium m-t-30">Teléfono Móvil</h4>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t-15">
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="countryCodeAndPrefixMobile" type="text" class="form-control" id="codPaisMovil">
+                                                    <span class="bar"></span>
+                                                    <label for="codPaisMovil">Pais/Prefijo</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['mobile'].controls['countryCodeAndPrefixMobile'].value.length === 0">
+                                                        <small>Ejemplo:(Arg: 549)</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="areaCodeMobile" type="text" class="form-control" id="codAreaMovil">
+                                                    <span class="bar"></span>
+                                                    <label for="codAreaMovil">Código de Área</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['mobile'].controls['areaCodeMobile'].value.length === 0">
+                                                        <small>Código área de tu empresa. Ejemplo:(Cba: 353)</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="numberMobile" type="text" class="form-control" id="numeroMovil">
+                                                    <span class="bar"></span>
+                                                    <label for="numeroMovil">Número Móvil</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['mobile'].controls['numberMobile'].value.length === 0">
+                                                        <small>Móvil de tu empresa. (Sin el 15)</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Teléfono fijo opcional -->
+                                    <div formGroupName="phone">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <h4 class="font-medium m-t-30">Teléfono Fijo</h4>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t-15">
+
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+
+                                                    <input formControlName="countryCodeAndPrefixPhone" type="text" class="form-control" id="codPaisFijo">
+                                                    <span class="bar"></span>
+                                                    <label for="codPaisFijo">Pais/Prefijo</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['phone'].controls['countryCodeAndPrefixPhone'].value.length === 0">
+                                                        <small>Ejemplo:(Arg: 549)</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="areaCodePhone" type="text" class="form-control" id="codAreaFijo">
+                                                    <span class="bar"></span>
+                                                    <label for="codAreaFijo">Código de Área</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['phone'].controls['areaCodePhone'].value.length === 0">
+                                                        <small>Código área de tu empresa. Ejemplo:(Cba: 0353)</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group m-b-40">
+                                                    <input formControlName="numberPhone" type="text" class="form-control" id="numeroFijo">
+                                                    <span class="bar"></span>
+                                                    <label for="numeroFijo">Número Fijo</label>
+                                                    <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['phone'].controls['numberPhone'].value.length === 0">
+                                                        <small>Tel.Fijo de tu empresa</small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div formGroupName="socialNetwork">
+                                        <h4 class="font-medium m-t-30 ">Redes Sociales</h4>
+                                        <hr class="m-b-30">
+                                        <div class="">
+                                            <div class="row m-t-15">
+
+                                                <div class="col-md-4">
+
+                                                    <div class="form-group m-b-40" [ngClass]="{'has-error': !formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].valid &&  formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].touched}">
+
+                                                        <input formControlName="facebook" type="text" class="form-control" id="facebook" autocomplete="false">
+                                                        <span class="bar"></span>
+                                                        <label for="facebook">Usuario de facebook</label>
+                                                        <div *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].value.length == 0 ">
+                                                            <!-- formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].errors?.required -->
+
+                                                            <small>https://facebook.com/
+                                                                <strong>usuarioFacebook</strong>.</small>
+                                                        </div>
+                                                        <div *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].errors?.required && formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].touched ">
+                                                            <small class="form-control-feedback">El campo es requerido</small>
+                                                        </div>
+                                                        <div *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].errors?.minlength && formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].touched">
+                                                            <small class="form-control-feedback">Aún faltan {{formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].errors?.minlength.requiredLength
+                                                                - formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['facebook'].errors?.minlength.actualLength
+                                                                | number}} caracteres</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group m-b-40">
+                                                        <input formControlName="instagram" type="text" class="form-control" id="instagram">
+                                                        <span class="bar"></span>
+                                                        <label for="instagram">Usuario de Instagram</label>
+                                                        <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['instagram'].value.length == 0 ">
+                                                            <small>https://instagram.com/
+                                                                <strong>usuarioInstagram</strong>.</small>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group m-b-40">
+                                                        <input formControlName="googlePlus" type="text" class="form-control" id="googlePlus">
+                                                        <span class="bar"></span>
+                                                        <label for="googlePlus">Usuario de GooglePlus</label>
+                                                        <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['googlePlus'].value.length == 0 ">
+                                                            <small>https://googleplus.com/
+                                                                <strong>usuarioGooglePlus</strong>.</small>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group m-b-40">
+                                                        <input formControlName="youTube" type="text" class="form-control" id="youtube">
+                                                        <span class="bar"></span>
+                                                        <label for="youtube">Usuario de You Tube</label>
+                                                        <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['youTube'].value.length == 0 ">
+                                                            <small>https://youtube.com/
+                                                                <strong>usuarioYouTube</strong>.</small>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group m-b-40">
+                                                        <input formControlName="vimeo" type="text" class="form-control" id="vimeo">
+                                                        <span class="bar"></span>
+                                                        <label for="vimeo">Usuario de Vimeo</label>
+                                                        <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['vimeo'].value.length == 0 ">
+                                                            <small>https://vimeo.com/
+                                                                <strong>usuarioVimeo</strong>.</small>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group m-b-40">
+                                                        <input formControlName="behance" type="text" class="form-control" id="behance">
+                                                        <span class="bar"></span>
+                                                        <label for="behance">Usuario de Behance</label>
+                                                        <span class="help-block" *ngIf="formDataCompany.controls['userInfo'].controls['socialNetwork'].controls['behance'].value.length == 0 ">
+                                                            <small>https://behance.com/
+                                                                <strong>usuarioBehance</strong>.</small>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            Formulario Válido={{formDataCompany.valid}}
+
+
+                            <div class="form-group text-right m-t-15">
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-success">Guardar Cambios</button>
+                                </div>
+
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
