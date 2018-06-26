@@ -1,0 +1,31 @@
+<div class="row el-element-overlay">
+    <div class="col-md-12">
+        <h4 class="card-title">Listado de proyectos</h4>
+        <h6 class="card-subtitle m-b-20 text-muted">Editar proyectos</h6>
+
+        <button [routerLink]="[ '/nuevo-proyecto' ]" class="btn btn-outline-primary m-b-20 cursor">Crear Proyecto</button>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="card">
+            <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1">
+                    <img src="../assets/images/users/1.jpg" alt="user" />
+                    <div class="el-overlay">
+                        <div class="el-info">
+                            <h3 class="editProject">Editar</h3>
+                            <li><a class="btn default btn-outline" href="javascript:void(0); " (click)="deleteProject()"><i class="fa fa-trash-o"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-card-content">
+                    <h3 class="box-title">Valentina Ellena</h3>
+                    <small> Categoría:<span class="badge badge-primary">XV Años</span></small>
+
+                    <small class="posted">Publicado: 26/10/1984</small>
+                    <br/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

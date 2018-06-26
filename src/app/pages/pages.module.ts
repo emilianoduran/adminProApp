@@ -11,9 +11,12 @@ import { AccountSettingComponent } from './components/account-setting/account-se
 import { DataCompanyComponent } from './components/data-company/data-company.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
+import { ProjectsListComponent } from './components/projects-list/projects-list.component';
+import { ProjectComponent } from './components/project/project.component';
+import { NewProjectComponent } from './components/new-project/new-project.component';
 
 @NgModule({
-  declarations: [AccountSettingComponent, DataCompanyComponent, DashboardComponent, PagesComponent],
+  declarations: [AccountSettingComponent, DataCompanyComponent, DashboardComponent, PagesComponent, ProjectsListComponent, ProjectComponent, NewProjectComponent],
   imports: [CommonModule, SharedModule, PAGE_ROUTING, FormsModule, ReactiveFormsModule],
   exports: [AccountSettingComponent, DataCompanyComponent, DashboardComponent, PagesComponent],
   providers: []

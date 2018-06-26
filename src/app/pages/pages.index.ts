@@ -1,3 +1,6 @@
+export { NewProjectComponent } from './components/new-project/new-project.component';
+export { ProjectsListComponent } from './components/projects-list/projects-list.component';
+export { ProjectComponent } from './components/project/project.component';
 export { LoginComponent } from './login/login.component';
 export { RegisterComponent } from './login/register.component';
 export { PagesComponent } from './pages.component';

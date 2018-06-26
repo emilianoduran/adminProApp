@@ -10,12 +10,7 @@ export class SidebarService {
       titulo: 'Principal',
       icono: 'mdi mdi-gauge',
 
-      submenu: [{ titulo: 'Dashboard', url: '/dashboard' }]
-    },
-    {
-      titulo: 'Portfolios',
-      icono: 'mdi mdi-gauge',
-      submenu: [{ titulo: 'Proyectos', url: '/projects' }, { titulo: 'Subir imágenes', url: '/upload' }]
+      submenu: [{ titulo: 'Dashboard', url: '/dashboard' }, { titulo: 'Proyectos', url: '/proyectos' }]
     }
   ];
 

@@ -602,7 +602,7 @@ html body .text-purple {
 }
 
 html body .text-primary {
-    color: #745af2 !important;
+    color: #56c0d8 !important;
 }
 
 html body .text-megna {
@@ -623,7 +623,7 @@ Background Colors
 *******************/
 
 .bg-primary {
-    background-color: #745af2 !important;
+    background-color: #56c0d8 !important;
 }
 
 .bg-success {
@@ -743,7 +743,7 @@ Rounds
 }
 
 .round.round-primary {
-    background: #745af2;
+    background: #56c0d8;
 }
 
 
@@ -789,7 +789,7 @@ Labels
 }
 
 .label-primary {
-    background-color: #745af2;
+    background-color: #56c0d8;
 }
 
 .label-purple {
@@ -839,7 +839,7 @@ Labels
 
 .label-light-primary {
     background-color: #f1effd;
-    color: #745af2;
+    color: #56c0d8;
 }
 
 .label-light-inverse {
@@ -877,7 +877,7 @@ Labels
 }
 
 .badge-primary {
-    background-color: #745af2;
+    background-color: #56c0d8;
 }
 
 .badge-warning {
@@ -2520,38 +2520,7 @@ Pagination
     color: rgba(120, 130, 140, 0.13);
 }
 
-
-/*
-Template Name: Admin pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
-File: scss
-*/
-
-
-/*
-Template Name: Admin Pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
-File: scss
-*/
-
-
-/*Theme Colors*/
-
-
-/*bootstrap Color*/
-
-
-/*Light colors*/
-
-
-/*Normal Color*/
-
-
-/*Extra Variable*/
-
-
+/
 /*******************
 Buttons
 ******************/
@@ -2699,8 +2668,8 @@ Buttons
 
 .btn-primary,
 .btn-primary.disabled {
-    background: #745af2;
-    border: 1px solid #745af2;
+    background: #56c0d8;
+    border: 1px solid #56c0d8;
     -webkit-box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
     box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
     -webkit-transition: 0.2s ease-in;
@@ -2710,10 +2679,11 @@ Buttons
 
 .btn-primary:hover,
 .btn-primary.disabled:hover {
-    background: #745af2;
+    background: #56c0d8;
     -webkit-box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
     box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
-    border: 1px solid #745af2;
+    border: 1px solid #56c0d8;
+    cursor: pointer !important;
 }
 
 .btn-primary.active,
@@ -2722,7 +2692,7 @@ Buttons
 .btn-primary.disabled.active,
 .btn-primary.disabled:active,
 .btn-primary.disabled:focus {
-    background: #6352ce;
+    background: #56c0d8;
     -webkit-box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
     box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
     border-color: transparent;
@@ -2951,9 +2921,9 @@ Buttons
 }
 
 .btn-outline-primary {
-    color: #745af2;
+    color: #56c0d8;
     background-color: #ffffff;
-    border-color: #745af2;
+    border-color: #56c0d8;
     -webkit-box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
     box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
     -webkit-transition: 0.2s ease-in;
@@ -2964,11 +2934,11 @@ Buttons
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-    background: #745af2;
+    background: #56c0d8;
     -webkit-box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
     box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
     color: #ffffff;
-    border-color: #745af2;
+    border-color: #56c0d8;
 }
 
 .btn-outline-primary.active,
@@ -2976,8 +2946,8 @@ Buttons
 .btn-outline-primary:focus {
     -webkit-box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
     box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
-    background-color: #6352ce;
-    border-color: #6352ce;
+    background-color: #56c0d8;
+    border-color: #56c0d8;
 }
 
 .btn-outline-success {
@@ -3149,8 +3119,8 @@ Buttons
 .btn-primary.focus,
 .btn-primary:focus,
 .show>.btn-primary.dropdown-toggle {
-    background-color: #6352ce;
-    border: 1px solid #6352ce;
+    background-color: #56c0d8;
+    border: 1px solid #56c0d8;
 }
 
 .btn-success.active.focus,
@@ -5394,7 +5364,7 @@ Table-Layout
 }
 
 .color-table.primary-table thead th {
-    background-color: #745af2;
+    background-color: #56c0d8;
     color: #ffffff;
 }
 
@@ -5448,11 +5418,11 @@ Table-Layout
 }
 
 .color-bordered-table.primary-bordered-table {
-    border: 2px solid #745af2;
+    border: 2px solid #56c0d8;
 }
 
 .color-bordered-table.primary-bordered-table thead th {
-    background-color: #745af2;
+    background-color: #56c0d8;
     color: #ffffff;
 }
 
@@ -5542,7 +5512,7 @@ Table-Layout
 }
 
 .full-color-table.full-primary-table thead th {
-    background-color: #745af2;
+    background-color: #56c0d8;
     border: 0;
     color: #ffffff;
 }
@@ -5552,7 +5522,7 @@ Table-Layout
 }
 
 .full-color-table.full-primary-table tr:hover {
-    background-color: #745af2;
+    background-color: #56c0d8;
     color: #ffffff;
 }
 
